@@ -11,7 +11,7 @@
                     {{#if featured}}
                     <div class="art-list-time"><span style="color:#F40034;">&#10029;</span> Featured</div>
                     {{else}}{{/if}}
-                    <div class="art-list-time"><a href="{{ @blog.url }}{{ url }}#disqus_thread">Comments</a></div>
+                    <div class="art-list-time"><a href="{{ @blog.url }}{{ url }}#disqus_thread" data-disqus-identifier="ghost-{{id}}">Comments</a></div>
                 </div>
                 <p>{{excerpt}} &hellip;</p>
             </li>
