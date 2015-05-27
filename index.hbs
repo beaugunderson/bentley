@@ -6,11 +6,12 @@
             {{#foreach posts }}
             <li class="art-list-item">
                 <div class="art-list-item-title-and-time">
-                    <h2 class="art-list-title"><a href="{{ @blog.url }}{{ url }}#disqus_thread">{{ title }}</a></h2>
+                    <h2 class="art-list-title"><a href="{{ @blog.url }}{{ url }}">{{ title }}</a></h2>
                     <div class="art-list-time">{{date published_at format="MMMM Do, YYYY"}}</div>
                     {{#if featured}}
                     <div class="art-list-time"><span style="color:#F40034;">&#10029;</span> Featured</div>
                     {{else}}{{/if}}
+                    <div class="art-list-time"><a href="{{ @blog.url }}{{ url }}#disqus_thread">Comments</a></div>
                 </div>
                 <p>{{excerpt}} &hellip;</p>
             </li>
