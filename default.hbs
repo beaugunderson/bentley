@@ -81,10 +81,8 @@
     <!-- <div class="footer-nav"><p></p></div> -->
     <div class="psi">&Psi;</div>
     <aside class="offsite-links">
-        <a class="twitter-link" href="{{! TODO: ADD TWITTER URL HERE }}">Twitter</a> /
-    		<a class="instagram-link" href="{{! TODO: ADD INSTAGRAM URL HERE }}">Instagram</a> /
+        <a class="gofundme-link" href="http://www.gofundme.com/marchtoremission">GoFundMe</a> /
         <a class="rss-link" href="{{ @blog.url }}/rss">RSS</a>
-        
     </aside>
 </footer>
 
@@ -95,6 +93,8 @@
 <script type="text/javascript" src="{{ asset 'js/fittext.js' }}"></script>
 <script type="text/javascript" src="{{ asset 'js/app.js' }}"></script>
 <script type="text/javascript" src="{{ asset 'js/respond.min.js' }}"></script>
+
+<!--
 <script type="text/javascript">
   var ga_ua = '{{! TODO: ADD GOOGLE ANALYTICS UA HERE }}';
 
@@ -105,9 +105,23 @@
       z.parentNode.insertBefore(t,z)}(window,document,'script','ga'));
       ga('create',ga_ua);ga('send','pageview');
 </script>
+-->
 
 {{! Ghost outputs important scripts and data with this tag }}
 {{ghost_foot}}
+
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'marchtoremission';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
 
 </body>
 </html>
